@@ -26,8 +26,21 @@ def chake_resalt():
             print(f"Your Average: {avg}")
             found = True
             break
-
     if not found:
         print(" No matching student found. Check your ID and name!")    
 
-chake_resalt()
+def manu():
+
+    while True:
+        print("\n 1. Chake resalt")
+        print(" 2. Exit")
+        choice = input("Enter Your Choice:")
+        
+        if choice == "1":
+            chake_resalt()
+        elif choice == "2":
+            print("Doodbye")  
+            break
+        else:
+            print("Invalid choice, try again")
+manu()            
